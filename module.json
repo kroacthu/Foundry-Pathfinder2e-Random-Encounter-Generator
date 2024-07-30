@@ -1,0 +1,15 @@
+{
+    "id": "random-encounter-generator",
+    "title": "Random Encounter College Project",
+    "description": "Tried to make a random encounter generator as a foundry module.",
+    "authors": [
+        {
+            "name": "Kroacthu"
+        }
+    ],
+    "version": "0.0.1",
+    "compatibility": {
+        "minimum": "12",
+        "verified": "12"
+    }
+}
