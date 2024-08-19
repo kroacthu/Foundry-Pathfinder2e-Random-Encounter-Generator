@@ -139,9 +139,11 @@ class GeneratorConfig extends FormApplication
 
     async _updateObject(event, formData)
     {
+        const expandedData = foundry.utils.expandObject(formData);
+
         console.log(formData);
         console.log(formData.enemyType);
-        Generator.log(false, 'Utilizing', {formData})
+        Generator.log(false, 'Utilizing', {formData, expandedData})
     }
 }
 
