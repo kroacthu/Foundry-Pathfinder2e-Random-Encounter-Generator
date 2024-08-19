@@ -11,5 +11,18 @@
     "compatibility": {
         "minimum": "12",
         "verified": "12"
-    }
+    },
+    "esmodules": [
+        "scripts/generator.js"
+    ],
+    "styles": [
+        "styles/generator.css"
+    ],
+    "languages": [
+        {
+            "lang": "en",
+            "name": "English",
+            "path": "languages/en.json"
+        }
+    ]
 }

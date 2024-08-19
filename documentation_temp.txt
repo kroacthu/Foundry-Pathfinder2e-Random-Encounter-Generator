@@ -1,0 +1,187 @@
+Design Document 
+The benefits are:
+Knowledge Transfer:
+    • Mitigate the "Bus Factor": Ensures work continuity if a key member is unavailable.
+    • Onboarding New Members: Provides essential background for new team members.
+Learning and Development
+    • Educational Resource: Serves as a learning tool for all team members.
+    • Mentorship Opportunity: Allows senior engineers to mentor less experienced team members.
+Clarity and Direction
+    • Clear Plan: Reduces ambiguity with a well-defined project plan.
+    • Defined Scope: Manages expectations.
+    • Collaborative Input: Encourages team input, addressing ideas and concerns early.
+Documentation
+    • Reference Material
+    • Historical Record: Keeps a record of decisions, scope changes, and design rationale.
+Feedback Loop
+    • Early Feedback: Enables early feedback from stakeholders and team members.
+    • Risk Mitigation: Identifies potential risks and strategies early in the process.
+The Design Document Template:
+Section 1 - Project Description
+1.1 Project
+The project name
+1.2 Description
+Brief overall description of the project
+1.3 Revision History
+Date
+Comment
+Author
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Section 2 - Overview
+2.1 Purpose
+Brief description of the focus of this module of the overall project and its intended audience.
+2.2 Scope
+Describe the scope of the module to be produced
+2.3 Requirements
+Break down the requirements to provide a ballpark estimate.
+2.3.1 Functional Requirements
+Functional requirements describe what the system should do. They include detailed descriptions of the system's functions, features, and behaviors.
+Example:
+  - Requirement 1 (R1): The system shall allow users to log in using a username and password.
+  - Requirement 2 (R2): The system shall allow users to upload files to the server.
+2.3.2 Non-Functional Requirements
+Non-functional requirements describe how the system performs a function, focusing on aspects such as:
+1) Performance (throughput, response time, scalability);
+2) Reliability(availability, error handling);
+Example:
+  - Performance: The system shall handle up to 1000 concurrent users without performance degradation.
+  - Reliability: The system shall have 99.9% uptime.
+2.3.3 Technical Requirements
+Technical requirements specify the technical aspects that must be met, including hardware, software, and technology constraints.
+Example:
+  - Hardware: The system shall run on servers with at least 16GB of RAM and 4 CPUs.
+  - Software: The system shall be developed using Java and run on a Tomcat server.
+2.3.4 Security Requirements
+Security requirements outline the measures that must be implemented to protect the system and its data.
+Example:
+  - Authentication: The system shall use multi-factor authentication for all user logins.
+  - Data Encryption: All sensitive data shall be encrypted both in transit and at rest.
+2.3.5 Estimates
+Provide a breakdown of tasks and estimated hours required to complete them.
+#
+Description
+Hrs. Est.
+1
+Brief description of task / module with link
+# est
+
+TOTAL:
+# est tot
+2.3.6 Traceability Matrix
+Cross reference this document with your requirements document and link where you satisfy each requirement
+SRS Requirement
+SDD Module
+Req 1
+5.1.1 (link to module), 5.1.2 (link)
+
+
+
+
+
+Section 3 - System Architecture
+3.1 Overview
+Provide a high-level overview of the system architecture, explaining the main components and how they interact.
+If the new component is added, provide the link to the current system design/documentation.
+3.2 Architectural Diagrams
+Depending on the nature and complexity of the project, different types of diagrams may be more appropriate to illustrate the system architecture. It is mandatory to include an overall system architecture diagram and clearly indicate where this module fits in. 
+Below is a list of possible diagrams, each serving a specific purpose:
+1) Component Diagram
+2) Sequence Diagram
+3) Data Flow Diagram (DFD)
+4) Deployment Diagram
+5) Class Diagram
+6) Use Case Diagram
+
+Section 4 - Data Dictionary
+Brief description of each element in this module or a link to an actual data dictionary
+(template of a database table description)
+Table
+Field
+Notes
+Type
+ID
+Unique Identifier from TABLE_SEQ
+DECIMAL
+NAME
+The Name in Object.Name()
+VARCHAR
+VALUE
+The Value output from somewhere
+VARCHAR
+
+Section 5 – Data Design
+Describe the data contained in databases and other shared structures between domains or within the scope of the overall project architecture
+5.1 Persistent/Static Data
+Describe/illustrate the logical data model or entity relationship diagrams for the data 
+5.1.1 Dataset
+Describe persisted object/dataset and its relationships to other entities/datasets using Logical Data Model (e.g. Entity Relationship Diagram).
+Example:
+Entities:
+a) User
+  - Attributes: UserID (PK), Username, Password, Email, Role
+  - Relationships: One-to-Many with Orders
+
+Section 6 - User Interface Design
+6.1 User Interface Design Overview
+Pictures, high level requirements, mockups, etc.
+6.2 User Interface Navigation Flow
+Diagram the flow from one screen to the next
+6.3 Use Cases / User Function Description
+Describe screen usage / function using use cases, or on a per function basis
+
+Section 7 - Testing 
+This section covers the strategies and practices for ensuring the quality and reliability of the software through various stages of testing and monitoring. It includes end-to-end testing, environment setups (Test, UAT, Prod), and Quality Assurance (QA) processes.
+7.1 Test Plan Creation:
+A test plan is a comprehensive document that outlines the strategy, scope, resources, schedule, and activities required for testing. It ensures that all aspects of the application are thoroughly tested.
+Components of a Test Plan:
+- Objective: Define the goals of testing (e.g., validate new features, ensure stability).
+- Scope: Specify what is and is not included in the testing.
+- Resources: List the personnel, tools, and environments required.
+- Schedule: Detail the timeline for testing activities.
+- Test Cases: Define individual tests with steps, expected results, and actual results.
+Test environment: 
+Test Case
+Input
+Expected Output
+Actual Output
+UAT environment:
+Test Case
+Input
+Expected Output
+Actual Output
+
+Section 8 - Monitoring
+Monitoring is a critical component of maintaining the health, performance, and security of an application. It involves collecting, analyzing, and acting upon various metrics and logs to ensure the system operates smoothly and meets user expectations. In this section, define how and where it would be monitored, thresholds etc. 
+Key metrics to monitor include:
+- Performance Metrics: Response times, throughput, server load, CPU usage, memory usage.
+- Error Metrics: Error rates, types of errors, affected users.
+- Availability Metrics: Uptime, downtime, service availability.
+- User Metrics: Active users, user sessions, retention rates.
+
+Section 9 - Other Interfaces
+Identify any external interfaces used in the execution of this module, include technology and other pertinent data
+9.1 Interface X
+Describe interactions, protocols, message formats, failure conditions, handshaking, etc
+
+Section 10 - Extra Design Features / Outstanding Issues
+Does not fit anywhere else above, but should be mentioned -- goes here
+
+Section 11 – References
+Any documents which would be useful to understand this design document or which were used in drawing up this design.
+
+Section 12 – Glossary
+Glossary of terms / acronyms

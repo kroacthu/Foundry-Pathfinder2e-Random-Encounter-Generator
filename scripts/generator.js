@@ -74,10 +74,12 @@ class GeneratorData
     // all the user input 
     static get allUserRequests() {}
 
-    static getUserRequest(userId)
-    {
-        return Gamepad.users.get(userId)?.getFlag(Generator.ID, Generator.FLAGS.GENERATORFLAG);
-    }
+
+    // TODO: Come back to inspect this later
+    // static getUserRequest(userId)
+    // {
+    //     return Gamepad.users.get(userId)?.getFlag(Generator.ID, Generator.FLAGS.GENERATORFLAG);
+    // }
 
     static createUserRequest(userId, requestData)
     {
@@ -128,11 +130,18 @@ class GeneratorConfig extends FormApplication
         return mergedOptions;
     }
 
-    getData(options)
+    // getData(options)
+    // {
+    //     return {
+    //         generator: GeneratorData.getUserRequest(options.userId)
+    //     }
+    // }
+
+    async _updateObject(event, formData)
     {
-        return {
-            generator: GeneratorData.getUserRequest(options.userId)
-        }
+        console.log(formData);
+        console.log(formData.enemyType);
+        Generator.log(false, 'Utilizing', {formData})
     }
 }
 

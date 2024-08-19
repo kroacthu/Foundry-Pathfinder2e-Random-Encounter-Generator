@@ -1,0 +1,355 @@
+{
+  "prototypeToken": {
+    "displayName": 20,
+    "displayBars": 20,
+    "flags": {
+      "pf2e": {
+        "linkToActorSize": true,
+        "autoscale": true
+      }
+    },
+    "height": 1,
+    "width": 1,
+    "actorLink": true,
+    "sight": {
+      "enabled": true,
+      "range": 0,
+      "angle": 360,
+      "visionMode": "basic",
+      "color": null,
+      "attenuation": 0.1,
+      "brightness": 0,
+      "saturation": 0,
+      "contrast": 0
+    },
+    "name": "pc_test",
+    "appendNumber": false,
+    "prependAdjective": false,
+    "texture": {
+      "src": "tokenizer/pc-images/wurm_1.Token.webp",
+      "anchorX": 0.5,
+      "anchorY": 0.5,
+      "offsetX": 0,
+      "offsetY": 0,
+      "fit": "contain",
+      "scaleX": 1,
+      "scaleY": 1,
+      "rotation": 0,
+      "tint": "#ffffff",
+      "alphaThreshold": 0.75
+    },
+    "hexagonalShape": 0,
+    "lockRotation": false,
+    "rotation": 0,
+    "alpha": 1,
+    "disposition": -1,
+    "bar1": {
+      "attribute": "attributes.hp"
+    },
+    "bar2": {
+      "attribute": null
+    },
+    "light": {
+      "negative": false,
+      "priority": 0,
+      "alpha": 0.5,
+      "angle": 360,
+      "bright": 0,
+      "color": null,
+      "coloration": 1,
+      "dim": 0,
+      "attenuation": 0.5,
+      "luminosity": 0.5,
+      "saturation": 0,
+      "contrast": 0,
+      "shadows": 0,
+      "animation": {
+        "type": null,
+        "speed": 5,
+        "intensity": 5,
+        "reverse": false
+      },
+      "darkness": {
+        "min": 0,
+        "max": 1
+      }
+    },
+    "detectionModes": [],
+    "occludable": {
+      "radius": 0
+    },
+    "ring": {
+      "enabled": false,
+      "colors": {
+        "ring": null,
+        "background": null
+      },
+      "effects": 0,
+      "subject": {
+        "scale": 1,
+        "texture": null
+      }
+    },
+    "randomImg": false
+  },
+  "folder": "8bsb8YwubIiK0txf",
+  "name": "pc_test",
+  "type": "character",
+  "effects": [],
+  "system": {
+    "attributes": {
+      "hp": {
+        "value": 1,
+        "temp": 0
+      },
+      "speed": {
+        "value": 25,
+        "otherSpeeds": [
+          {
+            "type": "burrow",
+            "value": 30
+          }
+        ]
+      }
+    },
+    "initiative": {
+      "statistic": "perception"
+    },
+    "details": {
+      "languages": {
+        "value": [
+          "common",
+          "halfling",
+          "orcish",
+          "strix",
+          "elven",
+          "fey"
+        ],
+        "details": ""
+      },
+      "level": {
+        "value": 1
+      },
+      "biography": {
+        "appearance": "",
+        "backstory": "",
+        "birthPlace": "",
+        "attitude": "",
+        "beliefs": "",
+        "anathema": [],
+        "edicts": [],
+        "likes": "",
+        "dislikes": "",
+        "catchphrases": "",
+        "campaignNotes": "",
+        "allies": "",
+        "enemies": "",
+        "organizations": "",
+        "visibility": {
+          "appearance": true,
+          "backstory": false,
+          "personality": false,
+          "campaign": false
+        }
+      },
+      "keyability": {
+        "value": "str"
+      },
+      "xp": {
+        "value": 0,
+        "min": 0,
+        "max": 1000,
+        "pct": 0
+      },
+      "age": {
+        "value": "500"
+      },
+      "height": {
+        "value": ""
+      },
+      "weight": {
+        "value": ""
+      },
+      "gender": {
+        "value": "Worm"
+      },
+      "ethnicity": {
+        "value": "Worm"
+      },
+      "nationality": {
+        "value": "The Ground"
+      }
+    },
+    "resources": {
+      "heroPoints": {
+        "value": 1,
+        "max": 3
+      }
+    },
+    "_migration": {
+      "version": 0.93,
+      "previous": null
+    },
+    "abilities": {
+      "str": {
+        "value": 10,
+        "mod": 2
+      },
+      "dex": {
+        "value": 10,
+        "mod": 4
+      },
+      "con": {
+        "value": 10,
+        "mod": 5
+      },
+      "int": {
+        "value": 10,
+        "mod": 6
+      },
+      "wis": {
+        "value": 10,
+        "mod": 1
+      },
+      "cha": {
+        "value": 10,
+        "mod": -2
+      }
+    },
+    "skills": {},
+    "pfs": {
+      "playerNumber": null,
+      "characterNumber": null,
+      "levelBump": false,
+      "currentFaction": "EA",
+      "school": null,
+      "reputation": {
+        "EA": null,
+        "GA": null,
+        "HH": null,
+        "VS": null,
+        "RO": null,
+        "VW": null
+      }
+    },
+    "exploration": [],
+    "build": {
+      "attributes": {
+        "boosts": {
+          "1": [
+            "str",
+            "dex",
+            "con",
+            "int"
+          ]
+        }
+      }
+    }
+  },
+  "img": "tokenizer/pc-images/wurm_1.Token.webp",
+  "items": [
+    {
+      "img": "systems/pf2e/icons/default-icons/deity.svg",
+      "name": "Yog-Sothoth",
+      "system": {
+        "description": {
+          "gm": "",
+          "value": "<p>Yog-Sothoth is, along with Azathoth, one of the greatest of the Outer Gods. In appearance, he is said to be a congeries of iridescent spheres-brilliant, foaming bubbles that constantly expand and collapse in upon themselves. He has other manifestations, however, including the Lurker on the Threshold, a mass of black tentacles that endlessly writhe, reach, and grow, and a mysterious humanoid figure hidden behind a shimmering veil.</p>\n<p>Yog-Sothoth embodies all of space and time; he exists in all places and in all moments simultaneously. Paradoxically, however, he is unable to manifest in the mortal universe unless summoned, a magical act that almost always results in untold destruction. He is known as the Key and the Gate, and magicians and cults research him in an effort to master time and space. Fortunately, his worship is not widespread, but some of those who have delved deep into his secrets describe him as an ambivalent figure, rather than a malevolent one, who guards cosmic secrets and makes them accessible to those who dare to ask for them. Yog-Sothoth reveals the true nature of the universe, but this is a thing that once seen cannot be unseen, and wise mortals turn aside from Yog-Sothoth's offer of cosmic knowledge in favor of a more mundane existence.</p>\n<p><strong>Edicts</strong> Gather knowledge of gates through space and time, curse or mutate unborn children</p>\n<p><strong>Anathema</strong> None</p>"
+        },
+        "rules": [],
+        "slug": "yog-sothoth",
+        "_migration": {
+          "version": 0.93,
+          "lastMigration": null,
+          "previous": null
+        },
+        "traits": {
+          "otherTags": []
+        },
+        "publication": {
+          "title": "Pathfinder Lost Omens: Gods & Magic",
+          "authors": "",
+          "license": "OGL",
+          "remaster": false
+        },
+        "category": "deity",
+        "sanctification": {
+          "modal": "can",
+          "what": [
+            "unholy"
+          ]
+        },
+        "domains": {
+          "primary": [
+            "knowledge",
+            "time",
+            "travel",
+            "void"
+          ],
+          "alternate": []
+        },
+        "font": [
+          "harm"
+        ],
+        "attribute": [
+          "cha",
+          "int"
+        ],
+        "skill": [
+          "occultism"
+        ],
+        "weapons": [
+          "dagger"
+        ],
+        "spells": {
+          "1": "Compendium.pf2e.spells-srd.Item.aEM2cttJ2eYcLssW",
+          "5": "Compendium.pf2e.spells-srd.Item.2w4OpAGihn1JSHFD",
+          "7": "Compendium.pf2e.spells-srd.Item.G56DJkxlUjFv0C4Z"
+        }
+      },
+      "type": "deity",
+      "_stats": {
+        "compendiumSource": "Compendium.pf2e.deities.Item.SUaGdvQXxSAQAw03",
+        "duplicateSource": null,
+        "coreVersion": "12.330",
+        "systemId": "pf2e",
+        "systemVersion": "6.0.1",
+        "createdTime": 1722382682996,
+        "modifiedTime": 1722382682996,
+        "lastModifiedBy": "asvv7DOL8SzX3DWR"
+      },
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.pf2e.deities.Item.SUaGdvQXxSAQAw03"
+        }
+      },
+      "effects": [],
+      "folder": null,
+      "ownership": {
+        "default": 0,
+        "asvv7DOL8SzX3DWR": 3
+      },
+      "sort": 0,
+      "_id": "FpH8ZrACOiR3Psuz"
+    }
+  ],
+  "flags": {
+    "pf2e": {
+      "freeCrafting": false
+    },
+    "exportSource": {
+      "world": "pathfinder-sandbox",
+      "system": "pf2e",
+      "coreVersion": "12.330",
+      "systemVersion": "6.0.1"
+    }
+  },
+  "_stats": {
+    "coreVersion": "12.330",
+    "systemId": "pf2e",
+    "systemVersion": "6.0.1",
+    "createdTime": 1722381818682,
+    "modifiedTime": 1722382712906,
+    "lastModifiedBy": "asvv7DOL8SzX3DWR"
+  }
+}
